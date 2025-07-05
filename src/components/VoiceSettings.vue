@@ -86,7 +86,7 @@ const testHindiVoice = async () => {
 
 onMounted(async () => {
   isElevenLabsActive.value = voiceService.value.isElevenLabsAvailable()
-  emit('voiceServiceUpdate', voiceService.value)
+  emit('voiceServiceUpdate', voiceService.value as any)
 })
 </script>
 
