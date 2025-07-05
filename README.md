@@ -100,8 +100,7 @@ npm run preview
 ```
 
 ### Deployment Options
-The built application can be deployed to any static hosting service:
-- **Netlify**: Drag and drop the `dist` folder
+
   https://hinditranslation.netlify.app/
 
 ## Browser Support
