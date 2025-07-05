@@ -56,7 +56,7 @@ interface Props {
   error: string
 }
 
-const _props = defineProps<Props>()
+
 const emit = defineEmits<{
   translate: [text: string]
 }>()
