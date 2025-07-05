@@ -50,7 +50,7 @@ import { ref, onMounted } from 'vue'
 import VoiceService from '../utils/voiceApi'
 
 const emit = defineEmits<{
-  voiceServiceUpdate: [service: VoiceService]
+  voiceServiceUpdate: [service: InstanceType<typeof VoiceService>]
 }>()
 
 const showSettings = ref(false)
