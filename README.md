@@ -5,9 +5,9 @@ A modern, responsive Vue.js application for translating English text to Hindi wi
 ## Features
 
 ### Core Features
-- **Real-time Translation**: Translate English text to Hindi using MyMemory API
+- **Real-time Translation**: Translate English text to Hindi using the MyMemory API
 - **Translation History**: Automatic saving of the last 10 translations
-- **Text-to-Speech**: Listen to both original and translated text
+- **Text-to-Speech**: Listen to both original and translated text using ElevenLabs API
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Offline Storage**: Translation history persists using localStorage
 - **Error Handling**: Comprehensive error handling with retry mechanisms
@@ -70,15 +70,7 @@ A modern, responsive Vue.js application for translating English text to Hindi wi
 - `Tab`: Navigate between form elements
 - `Space/Enter`: Activate buttons
 
-## API Information
 
-This application uses the **MyMemory Translation API**, which:
-- Provides free translation services
-- Does not require API keys
-- Supports English to Hindi translation
-- Has built-in rate limiting and error handling
-
-**API Endpoint**: `https://api.mymemory.translated.net/get`
 
 ## Project Structure
 
@@ -110,8 +102,7 @@ npm run preview
 ### Deployment Options
 The built application can be deployed to any static hosting service:
 - **Netlify**: Drag and drop the `dist` folder
-- **Vercel**: Connect your Git repository
-- **GitHub Pages**: Use the built files from `dist` folder
+  https://hinditranslation.netlify.app/
 
 ## Browser Support
 
@@ -136,44 +127,3 @@ The built application can be deployed to any static hosting service:
 - **Vite**: Fast build tool and development server
 - **@vueuse/core**: Vue composition utilities
 
-### Performance Optimizations
-- **Lazy Loading**: Components loaded on demand
-- **Debounced Input**: Prevents excessive API calls
-- **Caching**: LocalStorage for offline functionality
-- **Efficient Rendering**: Vue's reactivity system
-
-## Error Handling
-
-The application includes comprehensive error handling:
-- **Network Errors**: Automatic retry with exponential backoff
-- **API Errors**: User-friendly error messages
-- **Input Validation**: Character limits and format checking
-- **Graceful Degradation**: Fallback options when features aren't available
-
-## Accessibility
-
-- **ARIA Labels**: Screen reader support
-- **Keyboard Navigation**: Full keyboard accessibility
-- **High Contrast**: Support for high contrast mode
-- **Reduced Motion**: Respects user's motion preferences
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-If you encounter any issues or have questions:
-1. Check the browser console for error messages
-2. Ensure you have an active internet connection
-3. Try refreshing the page
-4. Clear your browser cache if needed
-
-## Future Enhancements
-
-Potential features for future versions:
-- Additional language pairs
-- Offline translation capabilities
-- User accounts and cloud sync
-- Advanced text formatting options
-- Translation quality ratings
